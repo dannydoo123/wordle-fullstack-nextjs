@@ -111,9 +111,9 @@ function Navbar({
               <p>• Enter a valid 5-letter word as your guess.</p>
               <p>• After submission, tiles change color:</p>
               <div className="color-examples">
-                <p><span className="green-example">Green</span>: Letter is in the correct position.</p>
-                <p><span className="yellow-example">Yellow</span>: Letter is in the word but wrong position.</p>
-                <p><span className="gray-example">Gray</span>: Letter is not in the word.</p>
+                <p>• <span className="green-example">Green</span>: Letter is in the correct position.</p>
+                <p>• <span className="yellow-example">Yellow</span>: Letter is in the word but wrong position.</p>
+                <p>• <span className="gray-example">Gray</span>: Letter is not in the word.</p>
               </div>
               <p>• Use these clues to guess the word within 6 tries.</p>
               <p>• Use the Hint feature for help - it will reveal one correct letter in your next guess, but you can only type 4 letters for that guess.</p>
