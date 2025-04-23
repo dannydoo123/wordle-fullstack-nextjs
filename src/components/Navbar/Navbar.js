@@ -106,22 +106,21 @@ function Navbar({
         <div className="rules-modal">
           <div className="rules-content">
             <h3>How to Play</h3>
-            <ul>
-              <li>Guess the secret 5-letter word within 6 tries.</li>
-              <li>Enter a valid 5-letter word as your guess.</li>
-              <li>After submission, tiles change color:
-                <ul>
-                  <li><span className="green-example">Green</span>: Letter is in the correct position.</li>
-                  <li><span className="yellow-example">Yellow</span>: Letter is in the word but wrong position.</li>
-                  <li><span className="gray-example">Gray</span>: Letter is not in the word.</li>
-                </ul>
-              </li>
-              <li>Use these clues to guess the word within 6 tries.</li>
-              <li>Use the Hint feature for help - it will reveal one correct letter in your next guess, but you can only type 4 letters for that guess.</li>
-              <li>You can only use the hint feature once per game.</li>
-              <li>In Challenge Mode, you'll have 2 minutes to solve the puzzle. The timer starts when you type your first letter.</li>
-              <li>You cannot turn off Challenge Mode when less than 10 seconds remain!</li>
-            </ul>
+            <div className="rules-list">
+              <p>• Guess the secret 5-letter word within 6 tries.</p>
+              <p>• Enter a valid 5-letter word as your guess.</p>
+              <p>• After submission, tiles change color:</p>
+              <div className="color-examples">
+                <p><span className="green-example">Green</span>: Letter is in the correct position.</p>
+                <p><span className="yellow-example">Yellow</span>: Letter is in the word but wrong position.</p>
+                <p><span className="gray-example">Gray</span>: Letter is not in the word.</p>
+              </div>
+              <p>• Use these clues to guess the word within 6 tries.</p>
+              <p>• Use the Hint feature for help - it will reveal one correct letter in your next guess, but you can only type 4 letters for that guess.</p>
+              <p>• You can only use the hint feature once per game.</p>
+              <p>• In Challenge Mode, you'll have 2 minutes to solve the puzzle. The timer starts when you type your first letter.</p>
+              <p>• You cannot turn off Challenge Mode when less than 10 seconds remain!</p>
+            </div>
             <button onClick={() => setShowRules(false)}>Close</button>
           </div>
         </div>
