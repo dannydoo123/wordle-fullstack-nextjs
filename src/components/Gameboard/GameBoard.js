@@ -11,7 +11,6 @@ function GameBoard({
   isHintActive, 
   hintPosition, 
   hintLetter,
-  gameWon,
   onAnimationComplete,
   hintHistory // Track which rows had hints
 }) {
