@@ -18,7 +18,6 @@ const Game = dynamic(() => import('../components/Game'), {
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
 
-  // This ensures hydration issues are avoided
   useEffect(() => {
     setIsClient(true);
   }, []);

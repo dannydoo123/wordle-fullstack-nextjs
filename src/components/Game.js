@@ -453,7 +453,7 @@ useEffect(() => {
       // Set animation state
       setIsAnimating(true);
       
-      // Increment guess index (we'll check for win/loss after animation)
+      // Increment guess index
       setGuessIndex(guessIndex + 1);
       setCurrentGuess('');
       

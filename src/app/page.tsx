@@ -17,16 +17,18 @@ const Game = dynamic(() => import('@/components/Game'), {
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
 
-  // This ensures hydration issues are avoided
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   return (
-    <main>
-      <div className="container">
-        {isClient && <Game />}
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-center">
+      {isClient ? <Game /> : (
+        <div className="loading-container">
+          <div className="loading-spinner"></div>
+          <p>Loading Wordle Game...</p>
+        </div>
+      )}
     </main>
   );
 }

@@ -4,7 +4,7 @@ import WordleGame from '../../../lib/models/WordleGame';
 // Initialize the word list
 const wordList = new WordList();
 
-// Store active games (in memory - would use a database in production)
+// Store active games
 const activeGames = new Map();
 
 export default async function handler(req, res) {

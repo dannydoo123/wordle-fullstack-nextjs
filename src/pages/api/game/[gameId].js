@@ -1,6 +1,3 @@
-// Store active games (in memory - would use a database in production)
-// This is shared across API routes in memory only during development
-// In production, you would use a database
 const activeGames = new Map();
 
 export default function handler(req, res) {
