@@ -36,18 +36,12 @@ A fully functional Wordle clone built with Next.js. Features dynamic word valida
 ---
 ## 📚 What I Learned
 
-**Next.js Framework**
-- Learned to structure a Next.js project using the App Router and utilize features.
-**Serverless Functions**
-- Built backend API endpoints using Next.js API routes (/pages/api/) that act as serverless functions.
-**State Management with React**
-- Managed multiple UI states using useState, passing props effectively, and conditionally rendering elements based on user interaction and timer status.
-**Component-Based Design**
-- Broke down the UI into reusable, functional components (e.g., Navbar, GameBoard, Keyboard, Timer, etc) and styled them using CSS Modules and plain CSS.
-**Frontend Debugging & Error Handling**
-- Debugged issues related to deployment timing, API responses, incorrect input handling, and rendering mismatches across devices.
-**User Experience Considerations**
-- Implemented features like dark mode, loading overlays, hint logic, and challenge mode with timers to make the game more interactive and accessible
+- **Next.js Framework** - Learned to structure a Next.js project using the App Router and utilize features.
+- **Serverless Functions** - Built backend API endpoints using Next.js API routes (/pages/api/) that act as serverless functions.
+- **State Management with React** - Managed multiple UI states using useState, passing props effectively, and conditionally rendering elements based on user interaction and timer status.
+- **Component-Based Design** - Broke down the UI into reusable, functional components (e.g., Navbar, GameBoard, Keyboard, Timer, etc) and styled them using CSS Modules and plain CSS.
+- **Frontend Debugging & Error Handling** - Debugged issues related to deployment timing, API responses, incorrect input handling, and rendering mismatches across devices.
+- **User Experience Considerations** - Implemented features like dark mode, loading overlays, hint logic, and challenge mode with timers to make the game more interactive and accessible
 
 ## 🧪 Getting Started Locally
 
