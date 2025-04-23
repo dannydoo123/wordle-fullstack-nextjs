@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import '../app/globals.css';
 
 // Use dynamic import to avoid SSR issues with browser-only components
-const Game = dynamic(() => import('@/components/Game'), {
+const Game = dynamic(() => import('../components/Game'), {
   ssr: false,
   loading: () => (
     <div className="loading-container">

@@ -1,0 +1,97 @@
+.keyboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .keyboard-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 58px;
+    border-radius: 4px;
+    background-color: #d3d6da;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .keyboard-key:hover {
+    opacity: 0.8;
+  }
+  
+  .keyboard-key.special-key {
+    min-width: 65px;
+    font-size: 12px;
+  }
+  
+  .keyboard-key.correct {
+    background-color: #6aaa64;
+    color: white;
+  }
+  
+  .keyboard-key.present {
+    background-color: #c9b458;
+    color: white;
+  }
+  
+  .keyboard-key.absent {
+    background-color: #787c7e;
+    color: white;
+  }
+  .keyboard-key:active {
+    background-color: #878a8c;
+  }
+  
+  .keyboard-key-wide {
+    width: 65px;
+    font-size: 12px;
+  }
+  
+  .correct-key {
+    background-color: #6aaa64;
+    color: white;
+  }
+  
+  .present-key {
+    background-color: #c9b458;
+    color: white;
+  }
+  
+  .absent-key {
+    background-color: #787c7e;
+    color: white;
+  }
+  
+  /* Dark mode */
+  .dark-mode .keyboard-key {
+    background-color: #818384;
+    color: white;
+  }
+  
+  .dark-mode .keyboard-key:active {
+    background-color: #565758;
+  }
+  
+  .dark-mode .correct-key {
+    background-color: #538d4e;
+  }
+  
+  .dark-mode .present-key {
+    background-color: #b59f3b;
+  }
+  
+  .dark-mode .absent-key {
+    background-color: #3a3a3c;
+  }

@@ -1,0 +1,110 @@
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.board-row {
+    display: flex;
+    gap: 5px;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #d3d6da;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    perspective: 1000px;
+}
+
+/* 3D flip card effect */
+.tile-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tile.flipped .tile-inner {
+    transform: rotateX(180deg);
+}
+
+.tile-front, .tile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-front {
+    background-color: transparent;
+}
+
+.tile-back {
+    transform: rotateX(180deg);
+}
+
+/* Color states */
+.tile-back.correct {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+    color: white;
+}
+
+.tile-back.present {
+    background-color: #c9b458;
+    border-color: #c9b458;
+    color: white;
+}
+
+.tile-back.absent {
+    background-color: #787c7e;
+    border-color: #787c7e;
+    color: white;
+}
+
+/* Hint letter styling */
+.tile.hint-letter {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+    color: white;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 5px rgba(106, 170, 100, 0.8);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(106, 170, 100, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(106, 170, 100, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(106, 170, 100, 0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 480px) {
+    .tile {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tile {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
