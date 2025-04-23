@@ -54,5 +54,8 @@ git clone https://github.com/dannydoo123/wordle-full
 cd wordle-full
 npm install next react react-dom axios
 npm run dev
-
-
+```
+📧 Author
+Hyemin Doo
+📫 hmdoo0112@gmail.com
+🌐 [LinkedIn](https://www.linkedin.com/in/hyemin-doo-b881b3338/)
